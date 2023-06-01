@@ -2,8 +2,8 @@
 
 Delphi test code
 
-[Delphi memo](https://www.s-m-l.org/dev/delphi.html)
-[Delphi FireMonkey memo](https://www.s-m-l.org/firemonkey.html)
+[Delphi memo](https://www.s-m-l.org/dev/delphi.html)  
+[Delphi FireMonkey memo](https://www.s-m-l.org/firemonkey.html)  
 
 # CopyRect(VCL)
 
