@@ -2,24 +2,22 @@
 
 Delphi 11.3  
   
-Žg—p‚µ‚Ä‚¢‚éƒNƒ‰ƒX  
+ä½¿ç”¨ã—ã¦ã„ã‚‹ã‚¯ãƒ©ã‚¹  
 TThread  
 TQueue  
 
-# ŠT—v
-ƒXƒŒƒbƒh‚Íˆ—–ˆ‚É¶¬A”jŠü  
-ƒXƒŒƒbƒh‚ÌI—¹‚ÍOnTerminateƒCƒxƒ“ƒg‚Å’Ê’m  
+# æ¦‚è¦
+ã‚¹ãƒ¬ãƒƒãƒ‰ã¯å‡¦ç†æ¯Žã«ç”Ÿæˆã€ç ´æ£„  
+ã‚¹ãƒ¬ãƒƒãƒ‰ã®çµ‚äº†ã¯OnTerminateã‚¤ãƒ™ãƒ³ãƒˆã§é€šçŸ¥  
 
-# “®ì
-## ƒ{ƒ^ƒ“‰Ÿ‚·
-ƒ{ƒ^ƒ“‰Ÿ‚·  
-¥  
-ƒXƒŒƒbƒh‚ð’âŽ~‚µ‚½ó‘Ô‚Å¶¬  
-ƒXƒŒƒbƒh‚ÌƒLƒ…[‚É•¶Žš—ñ‚ð“ü‚ê‚é  
-ƒXƒŒƒbƒh‹N“®  
-¥  
-ƒXƒŒƒbƒh‚Åˆ—AƒXƒŒƒbƒhI—¹‘Ò‚¿(I—¹‚ÍOnTerminateƒCƒxƒ“ƒg‚Å’Ê’m)  
-¥		¥  
-¥		ƒXƒŒƒbƒh‚ÍŽ©“®‰ð•ú  
-¥  
-ƒJ[ƒ\ƒ‹Œ³‚É–ß‚·  
+# å‹•ä½œ
+â–  ãƒœã‚¿ãƒ³æŠ¼ã™  
+	ã‚¹ãƒ¬ãƒƒãƒ‰ã‚’åœæ­¢ã—ãŸçŠ¶æ…‹ã§ç”Ÿæˆ  
+	ã‚¹ãƒ¬ãƒƒãƒ‰ã®ã‚­ãƒ¥ãƒ¼ã«æ–‡å­—åˆ—ã‚’å…¥ã‚Œã‚‹  
+	ã‚¹ãƒ¬ãƒƒãƒ‰èµ·å‹•  
+	â–¼  
+	ã‚¹ãƒ¬ãƒƒãƒ‰ã§å‡¦ç†ã€ã‚¹ãƒ¬ãƒƒãƒ‰çµ‚äº†å¾…ã¡(çµ‚äº†ã¯OnTerminateã‚¤ãƒ™ãƒ³ãƒˆã§é€šçŸ¥)  
+	â–¼		â–¼  
+	â–¼		ã‚¹ãƒ¬ãƒƒãƒ‰ã¯è‡ªå‹•è§£æ”¾  
+	â–¼  
+	ã‚«ãƒ¼ã‚½ãƒ«å…ƒã«æˆ»ã™  
