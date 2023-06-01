@@ -2,28 +2,28 @@
 
 Delphi 11.3  
   
-Žg—p‚µ‚Ä‚¢‚éƒNƒ‰ƒX  
+ä½¿ç”¨ã—ã¦ã„ã‚‹ã‚¯ãƒ©ã‚¹  
 TThread  
 TThreadedQueue  
 IFMXCursorService  
 
-# ŠT—v
-ƒXƒŒƒbƒh‚ÍFormCreateŽž¶¬AFormDestroyŽžI—¹
+# æ¦‚è¦
+ã‚¹ãƒ¬ãƒƒãƒ‰ã¯FormCreateæ™‚ç”Ÿæˆã€FormDestroyæ™‚çµ‚äº†
 
-# “®ì
-## ƒtƒH[ƒ€¶¬
-FormCreate  
-¥  
-ƒXƒŒƒbƒh¶¬  
-
-## ƒ{ƒ^ƒ“‰Ÿ‚·
-ƒ{ƒ^ƒ“‰Ÿ‚·  
-¥  
-ƒJ[ƒ\ƒ‹•ÏX  
-¥  
-ƒXƒŒƒbƒh‚Åˆ—AƒXƒŒƒbƒhI—¹‘Ò‚¿  
-¥  
-ƒJ[ƒ\ƒ‹Œ³‚É–ß‚·  
-
-## ƒtƒH[ƒ€”jŠü
-ƒXƒŒƒbƒh’âŽ~
+# å‹•ä½œ
+â– ãƒ•ã‚©ãƒ¼ãƒ ç”Ÿæˆ  
+	FormCreate  
+	â–¼  
+	ã‚¹ãƒ¬ãƒƒãƒ‰ç”Ÿæˆ  
+  
+â– ãƒœã‚¿ãƒ³æŠ¼ã™  
+	ãƒœã‚¿ãƒ³æŠ¼ã™  
+	â–¼  
+	ã‚«ãƒ¼ã‚½ãƒ«å¤‰æ›´  
+	â–¼  
+	ã‚¹ãƒ¬ãƒƒãƒ‰ã§å‡¦ç†ã€ã‚¹ãƒ¬ãƒƒãƒ‰çµ‚äº†å¾…ã¡  
+	â–¼  
+	ã‚«ãƒ¼ã‚½ãƒ«å…ƒã«æˆ»ã™  
+  
+â–  ãƒ•ã‚©ãƒ¼ãƒ ç ´æ£„  
+	ã‚¹ãƒ¬ãƒƒãƒ‰åœæ­¢
