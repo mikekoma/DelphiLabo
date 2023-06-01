@@ -4,19 +4,27 @@ Delphi test code
 
 # CopyRect(VCL)
 
+[CopyRect](CopyRect)
+
 Canvas.CopyRect()
 
 # FillChar
 
-FillChar‚Ìˆø”FXÀŒ±
+[FillChar](FillChar)
+
+FillCharã®å¼•æ•°è‰²ã€…å®Ÿé¨“
 
 # Thread1
 
-TThread FormCreate‚ÉƒXƒŒƒbƒh¶¬AFormDestroyƒXƒŒƒbƒh‚É”jŠü
+[Thread1](Thread1)
+
+TThread FormCreateæ™‚ã«ã‚¹ãƒ¬ãƒƒãƒ‰ç”Ÿæˆã€FormDestroyæ™‚ã‚¹ãƒ¬ãƒƒãƒ‰ã«ç ´æ£„
 
 # Thread2
 
-TThread ˆ—–ˆ‚ÉƒXƒŒƒbƒh¶¬Aˆ—I—¹ƒXƒŒƒbƒh”jŠü
+[Thread2](Thread2)
+
+TThread å‡¦ç†æ¯ã«ã‚¹ãƒ¬ãƒƒãƒ‰ç”Ÿæˆã€å‡¦ç†çµ‚äº†æ™‚ã‚¹ãƒ¬ãƒƒãƒ‰ç ´æ£„
 
 # Licence
 
