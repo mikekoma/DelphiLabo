@@ -8,7 +8,7 @@ uses
 type
   TIxSampleThread = class(TThread)
   private
-    { Private éŒ¾ }
+    { Private å®£è¨€ }
   protected
     procedure Execute; override;
   public
@@ -25,7 +25,7 @@ uses Unit1;
 constructor TIxSampleThread.Create(CreateSuspended: Boolean);
 begin
   inherited Create(CreateSuspended);
-  FreeOnTerminate := True; // I—¹‰ğ•ú
+  FreeOnTerminate := True; // çµ‚äº†æ™‚è§£æ”¾
   Queue := TQueue<string>.Create;
 end;
 
@@ -36,7 +36,7 @@ begin
   while (not Terminated) and (Queue.Count > 0) do
   begin
     value := Queue.Dequeue;
-    sleep(1000); // 1•b
+    sleep(1000); // 1ç§’
   end;
   Queue.Free;
 end;

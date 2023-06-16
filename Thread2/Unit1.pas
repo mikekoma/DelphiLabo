@@ -15,12 +15,12 @@ type
     Button1: TButton;
     procedure Button1Click(Sender: TObject);
   private
-    { private éŒ¾ }
+    { private å®£è¨€ }
     [volatile] thread_live: boolean;
     thread: TIxSampleThread;
     procedure onterminate_thread(Sender: TObject);
   public
-    { public éŒ¾ }
+    { public å®£è¨€ }
   end;
 
 var
@@ -34,23 +34,23 @@ procedure TForm1.Button1Click(Sender: TObject);
 var
   num: integer;
 begin
-  // ƒXƒŒƒbƒh‚ª‹N“®‚µ‚Ä‚¢‚½‚çÀs‚µ‚È‚¢
+  // ã‚¹ãƒ¬ãƒƒãƒ‰ãŒèµ·å‹•ã—ã¦ã„ãŸã‚‰å®Ÿè¡Œã—ãªã„
   if thread_live then
     Exit;
 
   Button1.Enabled := false;
   try
-    Memo1.Lines.Add('ˆ—ŠJn');
+    Memo1.Lines.Add('å‡¦ç†é–‹å§‹');
     // ------------------------------------
-    // ƒXƒŒƒbƒh¶¬
+    // ã‚¹ãƒ¬ãƒƒãƒ‰ç”Ÿæˆ
     // ------------------------------------
-    thread := TIxSampleThread.Create(True); // ’â~ó‘Ô‚Å¶¬
-    thread.FreeOnTerminate := True; // I—¹‰ğ•ú
-    thread.OnTerminate := onterminate_thread; // I—¹ƒCƒxƒ“ƒg”­¶
+    thread := TIxSampleThread.Create(True); // åœæ­¢çŠ¶æ…‹ã§ç”Ÿæˆ
+    thread.FreeOnTerminate := True; // çµ‚äº†æ™‚è§£æ”¾
+    thread.OnTerminate := onterminate_thread; // çµ‚äº†æ™‚ã‚¤ãƒ™ãƒ³ãƒˆç™ºç”Ÿ
     thread_live := True;
 
     // ------------------------------------
-    // ƒXƒŒƒbƒh‚É“n‚·ƒf[ƒ^€”õ
+    // ã‚¹ãƒ¬ãƒƒãƒ‰ã«æ¸¡ã™ãƒ‡ãƒ¼ã‚¿æº–å‚™
     // ------------------------------------
     num := Round(SpinBox1.Value);
     for var i := 0 to Round(num) - 1 do
@@ -59,12 +59,12 @@ begin
     end;
 
     // ------------------------------------
-    // ƒXƒŒƒbƒh‹N“®
+    // ã‚¹ãƒ¬ãƒƒãƒ‰èµ·å‹•
     // ------------------------------------
     thread.Resume;
 
     // ------------------------------------
-    // ƒXƒŒƒbƒhI—¹‚Ü‚¿
+    // ã‚¹ãƒ¬ãƒƒãƒ‰çµ‚äº†ã¾ã¡
     // ------------------------------------
     while thread_live do
       Application.ProcessMessages;
@@ -73,17 +73,17 @@ begin
     Button1.Enabled := True;
   end;
 
-  Memo1.Lines.Add('ˆ—I—¹');
+  Memo1.Lines.Add('å‡¦ç†çµ‚äº†');
 end;
 
 {
-  ’ˆÓ
-  FormDestroy‚ÅƒXƒŒƒbƒh‚ğ’â~‚µ‚½‚ÍOnTerminate”­¶‚µ‚È‚¢
+  æ³¨æ„
+  FormDestroyã§ã‚¹ãƒ¬ãƒƒãƒ‰ã‚’åœæ­¢ã—ãŸæ™‚ã¯OnTerminateç™ºç”Ÿã—ãªã„
 }
 procedure TForm1.onterminate_thread(Sender: TObject);
 begin
   thread_live := false;
-  Memo1.Lines.Add('OnTerminateƒCƒxƒ“ƒgFƒXƒŒƒbƒhI—¹');
+  Memo1.Lines.Add('OnTerminateã‚¤ãƒ™ãƒ³ãƒˆï¼šã‚¹ãƒ¬ãƒƒãƒ‰çµ‚äº†');
 end;
 
 end.
