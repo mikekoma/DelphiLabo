@@ -1,8 +1,8 @@
 unit Unit1;
 {
-  Qlƒ\[ƒX
-  ƒXƒŒƒbƒh‚ÌƒLƒ…[‚É•¶š—ñ‚ğ“n‚·
-  ƒXƒŒƒbƒh‚Ìˆ—‚ªI‚í‚é‚Ü‚Åƒ{ƒ^ƒ“ƒ_ƒEƒ“‚ÌŠÖ”‚ğ”²‚¯‚È‚¢
+  å‚è€ƒã‚½ãƒ¼ã‚¹
+  ã‚¹ãƒ¬ãƒƒãƒ‰ã®ã‚­ãƒ¥ãƒ¼ã«æ–‡å­—åˆ—ã‚’æ¸¡ã™
+  ã‚¹ãƒ¬ãƒƒãƒ‰ã®å‡¦ç†ãŒçµ‚ã‚ã‚‹ã¾ã§ãƒœã‚¿ãƒ³ãƒ€ã‚¦ãƒ³ã®é–¢æ•°ã‚’æŠœã‘ãªã„
 }
 
 interface
@@ -25,10 +25,10 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure Button2Click(Sender: TObject);
   private
-    { private éŒ¾ }
+    { private å®£è¨€ }
     thread: TIxSampleThread;
   public
-    { public éŒ¾ }
+    { public å®£è¨€ }
   end;
 
 var
@@ -56,15 +56,15 @@ begin
     end;
 
     CursorService := TPlatformServices.Current.GetPlatformService(IFMXCursorService) as IFMXCursorService;
-    saved_cursor := CursorService.GetCursor; // ƒJ[ƒ\ƒ‹•Û‘¶
-    CursorService.SetCursor(crHourGlass); // ƒJ[ƒ\ƒ‹‚ğ»Œv‚É•Ï‚¦‚é
-    Memo1.Lines.Add('ƒJ[ƒ\ƒ‹•ÏX');
+    saved_cursor := CursorService.GetCursor; // ã‚«ãƒ¼ã‚½ãƒ«ä¿å­˜
+    CursorService.SetCursor(crHourGlass); // ã‚«ãƒ¼ã‚½ãƒ«ã‚’ç ‚æ™‚è¨ˆã«å¤‰ãˆã‚‹
+    Memo1.Lines.Add('ã‚«ãƒ¼ã‚½ãƒ«å¤‰æ›´');
 
     while thread.Count > 0 do;
 
-    CursorService.SetCursor(saved_cursor); // ƒJ[ƒ\ƒ‹‚ğŒ³‚É–ß‚·
+    CursorService.SetCursor(saved_cursor); // ã‚«ãƒ¼ã‚½ãƒ«ã‚’å…ƒã«æˆ»ã™
     saved_cursor := 0;
-    Memo1.Lines.Add('ƒJ[ƒ\ƒ‹Œ³‚É–ß‚µ‚½');
+    Memo1.Lines.Add('ã‚«ãƒ¼ã‚½ãƒ«å…ƒã«æˆ»ã—ãŸ');
     Button1.Enabled := true;
   end;
 end;
