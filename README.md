@@ -29,6 +29,12 @@ TThread FormCreate時にスレッド生成、FormDestroy時スレッドに破棄
 
 TThread 処理毎にスレッド生成、処理終了時スレッド破棄
 
+# WinSock gethostbyname
+
+[WinSock_gethostbyname](WinSock_gethostbyname)
+
+ホスト名からIPアドレスを取得
+
 # Licence
 
 MIT License
