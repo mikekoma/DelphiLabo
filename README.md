@@ -35,6 +35,12 @@ TThread 処理毎にスレッド生成、処理終了時スレッド破棄
 
 ホスト名からIPアドレスを取得
 
+# regexp
+
+[regexp](regexp)
+
+正規表現
+
 # Licence
 
 MIT License
