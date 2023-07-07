@@ -8,16 +8,21 @@ uses
 
 type
   TForm1 = class(TForm)
-    Button1: TButton;
+    btnExec: TButton;
     edSource: TEdit;
     edRegexp: TEdit;
     Memo1: TMemo;
     edSource2: TEdit;
     Memo2: TMemo;
     Label1: TLabel;
-    procedure Button1Click(Sender: TObject);
+    cmbSelect: TComboBox;
+    Label2: TLabel;
+    edReplace: TEdit;
+    procedure btnExecClick(Sender: TObject);
   private
     { Private 宣言 }
+    procedure exec_IsMatch;
+    procedure exec_Replace;
   public
     { Public 宣言 }
     procedure memo(str: string);
@@ -33,7 +38,17 @@ uses System.RegularExpressions;
 
 {$R *.dfm}
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TForm1.btnExecClick(Sender: TObject);
+begin
+  case cmbSelect.ItemIndex of
+    0:
+      exec_IsMatch;
+    1:
+      exec_Replace;
+  end;
+end;
+
+procedure TForm1.exec_IsMatch;
 var
   match: TMatch;
 begin
@@ -68,6 +83,14 @@ begin
   begin
     memob('not match');
   end;
+end;
+
+procedure TForm1.exec_Replace;
+begin
+  Memo1.Clear;
+  memo(TRegEx.Replace(edSource.Text, edRegexp.Text, edReplace.Text));
+  Memo2.Clear;
+  memob(TRegEx.Replace(edSource2.Text, edRegexp.Text, edReplace.Text));
 end;
 
 procedure TForm1.memo(str: string);
