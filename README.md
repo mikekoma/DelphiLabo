@@ -17,6 +17,18 @@ Canvas.CopyRect()
 
 FillCharの引数色々実験
 
+# IndyUDPとTChart
+
+[[IndyUDPandTChart]](IndyUDPandTChart)
+
+UDPで送ったバイナリデータをTChartでグラフ表示
+
+# IndyUDP
+
+[[IndyUDP]](IndyUDP)
+
+UDPでバイナリ送受信
+
 # Thread1
 
 [Thread1](Thread1)
@@ -34,18 +46,6 @@ TThread 処理毎にスレッド生成、処理終了時スレッド破棄
 [WinSock_gethostbyname](WinSock_gethostbyname)
 
 ホスト名からIPアドレスを取得
-
-# IndyUDP
-
-[[IndyUDP]](IndyUDP)
-
-UDPでバイナリ送受信
-
-# IndyUDPとTChart
-
-[[IndyUDPandTChart]](IndyUDPandTChart)
-
-UDPで送ったバイナリデータをTChartでグラフ表示
 
 # regexp
 
