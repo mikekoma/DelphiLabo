@@ -47,6 +47,12 @@ UDPでバイナリ送受信
 
 グローバルマウスフック
 
+# TObjectListSort
+
+[[TObjectListSort]](TObjectListSort)
+
+GenericsのTObjectListでソートをする
+
 # Thread1
 
 [Thread1](Thread1)
