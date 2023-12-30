@@ -77,6 +77,12 @@ TThread 処理毎にスレッド生成、処理終了時スレッド破棄
 
 正規表現
 
+# オブジェクトを生成して初期化
+
+[CreateInit](CreateInit)
+
+オブジェクトを生成して初期化する方法を複数例
+
 # Licence
 
 MIT License
